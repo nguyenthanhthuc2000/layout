@@ -14,10 +14,9 @@
 
 </head>
 
-<body>
-
-    <header>
-        <div class="top-header d-flex justify-content-between align-items-center bgcl-dark container-fluid">
+<body class="bgcl-dark ">
+    <header class=" container-fluid ">
+        <div class="top-header d-flex justify-content-between align-items-center mb-3">
             <div class="top-header-left">
                 <div class="logo">
                     <img src="image/logo.png" alt="" class="img-fluid">
@@ -39,15 +38,118 @@
                 <a href="" class="btn-login">新規登録</a>
             </div>
         </div>
+
+        <div class="row" class="bgcl-dark"> 
+            <form>
+                <div class="input-group mb-3">
+                  <button class="btn btn-outline-secondary dropdown-toggle btn-dropdown-search" type="button" data-bs-toggle="dropdown" aria-expanded="false">全文検索</button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                  <input type="text" class="form-control input-search" aria-label="Text input with dropdown button" placeholder="キーワード検索">
+                   <button style="background: none; border: none;">
+                    <i class="fa-solid fa-magnifying-glass icon-search"></i>
+                  </button>
+                </div>  
+            </form>     
+        </div>
+
     </header>
 
-    <main>
+    <main >
 
-        <div class="row ">
-            <div class="col-md-2">
-                div.btn-menu
+        <div class="bgcl-dark d-flex container-fluid">
+                
+            <div class="sidebar ">
+                <div class="sidebar-toggle text-end">
+                    <button class="btn btn-sidebar-toggle"><i class="fa-solid fa-bars"></i></button>
+                </div>
+                <div class="box-sidebar-container">
+                </div>
+                <hr class="hr-light m-0 mb-3 hr-menu">
+                <aside class="" id="aside">
+                    <ul class="sidebar-list style-scrollbar">
+                        <li class="active sidebar-item">
+                            <a href="">もてる</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="">セルフコンパッション</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="">セルフコンパッション</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="">セルフコンパッション</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="">セルフコンパッション</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="">セルフコンパッション</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="">セルフコンパッション</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="">セルフコンパッション</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="">セルフコンパッション</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="">セルフコンパッション</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="">セルフコンパッション</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="">セルフコンパッション</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="">セルフコンパッション</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="">セルフコンパッション</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="">セルフコンパッション</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="">セルフコンパッション</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="">セルフコンパッション</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="">セルフコンパッション</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="">セルフコンパッション</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="">セルフコンパッション</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="">セルフコンパッション</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="">セルフコンパッション</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="">セルフコンパッション</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="">セルフコンパッション</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="">セルフコンパッション</a>
+                        </li>
+                    </ul>
+                </aside>
             </div>
-            <div class="col-md-10 bgcl-dark main-w-right">
+            <div class="w-100 bgcl-dark main-w-right style-scrollbar">
 
                 <div class="top_m-menu mb-3">
                     <button class="btn top_m-menu-btn active">TOP</button>
@@ -62,7 +164,7 @@
 
                 <div class="row box_v" id="">
                     <div class="box_v-header mb-3">
-                        <h3 class="box_v-title"><i class="fa-solid fa-clock-rotate-left"></i> 過去の人気動画</h3>
+                        <h3 class="box_v-title"><i class="fa-solid fa-clock-rotate-left"></i> 過去の人気</h3>
                         <button class="btn_border"><i class="fa-solid fa-caret-right"></i> &nbsp; もっとみる</button>
                     </div>
                     <hr class="hr-light">
@@ -413,8 +515,6 @@
                         <a href="" class="menu-footer">利用規約</a>
                     </div>
                 </div>
-
-                &nbsp;
             </div>
         </div>
     </main>
@@ -435,6 +535,15 @@
             $('.top_m-menu-btn').removeClass('active');
             $(this).addClass('active');
         });
+
+        $('.btn-sidebar-toggle').click(function() {
+            $('.sidebar').toggleClass('active');
+            $('.box-sidebar-container').toggleClass('active');
+        })
+        $('.box-sidebar-container').click(function(){
+            $('.sidebar').toggleClass('active');
+            $('.box-sidebar-container').toggleClass('active');
+        })
     </script>
 </body>
 
