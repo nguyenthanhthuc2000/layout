@@ -5,6 +5,27 @@
 a {
     text-decoration: none;
 }
+
+.bgcl-dark {
+    background-color: #191F29;  
+}
+
+.text-split-2{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+}
+.text-split-3{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp:3;
+}
 /* ========= box video ======== */
 .hr-light {
     color: #fff;
@@ -12,7 +33,7 @@ a {
 
 .box_v {
     background-color: #191F29;
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 
 .box_v .box_v-header {
@@ -22,9 +43,10 @@ a {
 }
 
 .box_v .box_v-header .btn_border{
-    padding: 3px 10px;
+    padding: 5px 25px;
     font-size: 0.7rem;
     color: #fff;
+    background: none;
 }
 
 .box_v .box_v-title {
@@ -36,13 +58,40 @@ a {
 .box_v-card {
     padding: 7px;
     cursor: pointer;
+    position: relative;
 }
 
-.box_v-card a{
+.box_v-card:hover .box_v-card-btn {
+    opacity: 1;
+}
+
+.box_v-card .box_v-card-main{
     display: block;
     background-color: #4F535C;
     border-radius: 7px;
     text-decoration: none;
+}
+
+.box_v-card .box_v-card-btn {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    z-index: 2;
+    opacity: 0;
+}
+
+.box_v-card .box_v-card-btn button{
+
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #191F29;
+}
+
+.box_v-card .box_v-card-star {
+    position: absolute;
+    bottom: 10px;
 }
 
 .box_v-card .box_v-card-star i {
@@ -56,6 +105,8 @@ a {
 
 .box_v-card .box_v-card-body {
     padding: 10px;
+    min-height: 90px;
+    position: relative
 }
 
 .box_v-card .box_v-card-image {
@@ -67,4 +118,50 @@ a {
 
 .box_v-card .box_v-card-star i.active {
     color: #ffd43b;
+}
+
+/* ============MENU TAB========================= */
+.top_m-menu {
+    text-align: center;
+}
+
+.top_m-menu .top_m-menu-btn {
+    text-transform: uppercase;
+    color: #9c9c9c;
+    font-weight: bold;
+    width: 100px;
+    padding-bottom: 12px;
+}
+
+.top_m-menu .top_m-menu-btn:focus{
+    box-shadow: none;
+}
+
+.top_m-menu .top_m-menu-btn.active, .top_m-menu .top_m-menu-btn:hover {
+    color: #08AEF4;
+    position: relative;
+}
+
+.top_m-menu .top_m-menu-btn.active:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2px;
+    width: 100%;
+    background-color: #08AEF4;
+}
+
+/* ========menu footer======= */
+.box_m-footer .menu-footer {
+    color: #fff;
+    font-size: 0.55rem;
+    padding: 5px 10px;
+}
+.box_m-footer.box_m-footer-right{
+    display: flex;
+    justify-content: end;
+}
+.box_m-footer .menu-footer:hover {
+    text-decoration: revert;
 }
